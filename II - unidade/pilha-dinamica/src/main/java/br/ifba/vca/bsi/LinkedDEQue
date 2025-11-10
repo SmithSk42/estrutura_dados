@@ -1,0 +1,112 @@
+public class LinkedDEQue <T> implentis Queeable<T>{
+     private int amount;
+     private int capacity;
+     private DoubleNode<T> head;
+     private DoubleNode<T> tall;
+
+    public LinkedDEQue(){
+        this(10);
+
+    }
+}
+
+public LinkedDEQue(int capacity){
+    head = null;
+    tail = null
+}
+
+public boolean isFull(){
+    return amount == capacity;
+}
+
+public boolean isEmpty(){
+    return amount == 0;
+}
+
+public T beginEnqueue(T data){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila cheia")
+    }
+    //criar nó
+    //setar o dado no novo nó
+    DoubleNode<T> newNode = new DoubleNode<>();
+    newNode.set data(data);
+
+    if(isEmpty()){
+        tail = newNode;
+        head = newNode;
+    } else {
+        newNode.setPrevious(tail);
+        tail.setNext()
+    
+    //ajustar os ponteiros
+    newNode.setPrevious(tail)
+    tail.setNext(newNode);
+    tail = tail.getNext(newNode);
+    tail = tail.setNext();
+}
+    amount++
+    //
+    //
+
+}
+
+public T endEnqueue(T data){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila cheia")
+    }
+}
+
+public T beginDequeue(){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila vazia")
+    }
+    amount--;
+    T auxData = head.getData();
+    head = headsetNext();
+    if (!isEmpty()){
+
+    }
+
+    //arruamr os ponteiros para que este dado seha vinculado a minha ED.
+    //head vai para  o próximo
+    //setar o head anterior com null
+
+head.getData();
+}
+
+public T endDequeue(){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila vazia")
+    }
+
+    amount--;
+    T auxData = tail.getData();
+    tail = tail.getPrevious();
+    if(!isEmpty){
+        tail.setNext(null);
+    } else {
+        head = null
+    }
+    return auxData;
+
+}
+public T front(){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila vazia")
+    }
+    return head.getData();
+}
+public T rear(){
+    if(isEmpty){
+        throw new NoSuchElementException("Fila vazia")
+    }
+    return tail.getData();
+}
+
+public String printFrontToRear{
+
+}
+public String printRearToTRear{
+    
+}
