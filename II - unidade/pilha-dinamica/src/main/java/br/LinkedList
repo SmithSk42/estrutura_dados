@@ -1,0 +1,7 @@
+public class LinkedList<E> implements {
+    
+    private DoubleNode<E> tail;
+    private DoubleNode<E> head;
+    private amout;
+    private capacity;
+}
