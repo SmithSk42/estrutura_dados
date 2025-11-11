@@ -1,4 +1,6 @@
-public class LinkedDEQue <T> implentis Queeable<T>{
+import java.util.NoSuchElementException;
+
+public class LinkedDEQue <T> implements Queueable<T>{
      private int amount;
      private int capacity;
      private DoubleNode<T> head;
